@@ -26,11 +26,13 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
         main.cpp \
         mainwindow.cpp \
-    paddle.cpp
+    paddle.cpp \
+    brick.cpp
 
 HEADERS += \
         mainwindow.h \
-    paddle.h
+    paddle.h \
+    brick.h
 
 FORMS += \
         mainwindow.ui
