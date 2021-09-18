@@ -1,6 +1,9 @@
 #ifndef PADDLE_H
 #define PADDLE_H
 
+#include <QImage>
+#include <QRect>
+
 class Paddle {
 public:
     Paddle();
