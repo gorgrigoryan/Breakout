@@ -27,12 +27,14 @@ SOURCES += \
         main.cpp \
         mainwindow.cpp \
     paddle.cpp \
-    brick.cpp
+    brick.cpp \
+    ball.cpp
 
 HEADERS += \
         mainwindow.h \
     paddle.h \
-    brick.h
+    brick.h \
+    ball.h
 
 FORMS += \
         mainwindow.ui
