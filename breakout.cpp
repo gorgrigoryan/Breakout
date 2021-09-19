@@ -2,15 +2,16 @@
 #include <QApplication>
 #include "breakout.h"
 
-Breakout::Breakout(QWidget* parent) : QWidget(parent) {
-    x = 0;
-    gameOver = false;
-    gameWon = false;
-    gameStarted = false;
-    ball = new Ball();
-    paddle = new Paddle();
-
-    int k = 0;
+Breakout::Breakout(QWidget* parent)
+    : QWidget(parent)
+    , x(0)
+    , gameOver(false)
+    , gameWon(false)
+    , gameStarted(false)
+    , ball(new Ball())
+    , paddle(new Paddle())
+{
+    auto k = 0;
     for (auto i = 0; i < 5; ++i) {
         for (auto j = 0; j < 6; ++j) {
             bricks[k] = new Brick(j * 40 + 30, i * 10 + 50);

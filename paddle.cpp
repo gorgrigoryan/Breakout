@@ -1,10 +1,10 @@
 #include <iostream>
 #include "paddle.h"
 
-Paddle::Paddle() {
-    dx = 0;
-    image.load("paddle.png");
-    rect = QRect(0, 0, 100, 20);
+Paddle::Paddle()
+    : dx(0)
+    , rect(QRect(0, 0, 100, 20)) {
+    image.load(":/images/paddle.png");
     resetState();
 }
 

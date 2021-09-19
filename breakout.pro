@@ -35,3 +35,6 @@ HEADERS += \
     brick.h \
     ball.h \
     breakout.h
+
+RESOURCES += \
+    breakout.qrc

@@ -1,10 +1,10 @@
 #include <iostream>
 #include "brick.h"
 
-Brick::Brick(const int x, const int y) {
-    image.load("brick.png");
-    destroyed = false;
-    rect = QRect(0, 0, 40, 10);
+Brick::Brick(const int x, const int y)
+    : destroyed(false)
+    , rect(QRect(0, 0, 40, 10)) {
+    image.load(":/images/brick.png");
     rect.translate(x, y);
 }
 

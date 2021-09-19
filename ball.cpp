@@ -1,11 +1,11 @@
 #include <iostream>
 #include "ball.h"
 
-Ball::Ball() {
-    image.load("ball.png");
-    xdir = 1;
-    ydir = -1;
-    rect = QRect(0, 0, 10, 10);
+Ball::Ball()
+    : xdir(1)
+    , ydir(-1)
+    , rect(QRect(0, 0, 10, 10)) {
+    image.load(":/images/ball.png");
     resetState();
 }
 
