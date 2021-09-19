@@ -11,8 +11,8 @@ public:
 
     void resetState();
     void move();
-    void setDx(int);
-    QRect getRect();
+    void setDx(const int);
+    QRect getRect() const;
     QImage& getImage();
 private:
     QImage image;

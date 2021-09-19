@@ -6,13 +6,13 @@
 
 class Brick {
 public:
-    Brick(int, int);
+    Brick(const int, const int);
     ~Brick();
 
-    bool isDestroyed();
-    void setDestroyed(bool);
-    QRect getRect();
-    void setRect(QRect);
+    bool isDestroyed() const;
+    void setDestroyed(const bool);
+    QRect getRect() const;
+    void setRect(const QRect&);
     QImage& getImage();
 private:
     QImage image;

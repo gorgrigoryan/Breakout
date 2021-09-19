@@ -25,16 +25,13 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
         main.cpp \
-        mainwindow.cpp \
     paddle.cpp \
     brick.cpp \
-    ball.cpp
+    ball.cpp \
+    breakout.cpp
 
 HEADERS += \
-        mainwindow.h \
     paddle.h \
     brick.h \
-    ball.h
-
-FORMS += \
-        mainwindow.ui
+    ball.h \
+    breakout.h

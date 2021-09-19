@@ -11,11 +11,11 @@ public:
 
     void resetState();
     void autoMove();
-    void setXdir(int);
-    void setYDir(int);
-    int getXDir();
-    int getYDir();
-    QRect getRect();
+    void setXDir(const int);
+    void setYDir(const int);
+    int getXDir() const;
+    int getYDir() const;
+    QRect getRect() const;
     QImage& getImage();
 private:
     int xdir;
